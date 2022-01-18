@@ -1,0 +1,71 @@
+<section>
+
+<div class="Registration-form">
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="" value="">
+        </mat-form-field>
+      
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Surname</mat-label>
+            <input matInput placeholder="" value="">
+          </mat-form-field>
+        
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                   placeholder="Ex. pat@example.com">
+            <mat-hint>Errors appear instantly!</mat-hint>
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Age</mat-label>
+            <input type="number" matInput placeholder="" value="">
+          </mat-form-field>
+
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Adress</mat-label>
+            <input  matInput placeholder="" value="">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Mobile number</mat-label>
+            <input type="number" matInput placeholder="" value="">
+          </mat-form-field>
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input  matInput placeholder="" value="">
+          </mat-form-field>
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Re Password</mat-label>
+            <input  matInput placeholder="" value="">
+          </mat-form-field>
+
+
+
+      </form>
+
+
+
+</div>
+
+
+</section>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "travelmore-fdac0": {
+      "hosting": {
+        "TravelMore": [
+          "travelmore-fdac0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "travelmore-fdac0"
+  }
+}
